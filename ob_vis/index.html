@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>test mouse widget</title>
+<link rel="stylesheet" href="node_modules/uplot/dist/uPlot.min.css" />
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; overflow: hidden; }
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#top-row {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  min-height: 0;
+}
+
+#plot1 { flex: 1; min-width: 0; }
+#plot3 { width: 20%; min-width: 0; }
+#bottom-row {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  min-height: 0;
+}
+
+#plot2 { flex: 1; min-width: 0; }
+#bottom-spacer { width: 20%; min-width: 0; }
+
+#plot1 .uplot, #plot2 .uplot,
+#plot1 .uplot canvas, #plot2 .uplot canvas { width: 100% !important; height: 100% !important; }
+.u-axis { pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="top-row">
+    <div id="plot1"></div>
+    <div id="plot3"></div>
+  </div>
+  <div id="bottom-row">
+    <div id="plot2"></div>
+    <div id="bottom-spacer"></div>
+  </div>
+</div>
+<script type="module" src="src/main.ts"></script>
+</body>
+</html>

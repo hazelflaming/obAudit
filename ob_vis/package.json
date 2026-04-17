@@ -1,0 +1,27 @@
+{
+  "name": "ob_vis",
+  "version": "1.0.0",
+  "description": "blah",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "blah"
+  },
+  "keywords": [
+    "blah"
+  ],
+  "author": "blah",
+  "license": "MIT",
+  "devDependencies": {
+    "uplot": "^1.6.32",
+    "vite": "^8.0.2"
+  },
+  "dependencies": {
+    "apache-arrow": "^21.1.0"
+  }
+}

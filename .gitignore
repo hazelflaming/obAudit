@@ -1,0 +1,9 @@
+ob_serve/target
+ob_serve/data
+*.json
+!ob_vis/package.json
+!ob_vis/package-lock.json
+ob_vis/refs/*
+ob_vis/node_modules/*
+*.arrow
+ob_vis/dist/*
