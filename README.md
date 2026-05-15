@@ -1,6 +1,11 @@
 # obAudit
 A [uPlot](https://github.com/leeoniya/uPlot)-based charting widget for orderbook depth exploration.
 
+<img width="2882" height="1520" alt="localhost_5173_" src="https://github.com/user-attachments/assets/e6fdddad-2937-4b36-a60c-84dad4d73d8a" />
+
+Data shown: Binance USDS-M Futures BTCUSDT normalized `incremental_book_L2`, first hour of 2025-05-01 UTC, sourced from [Tardis](https://datasets.tardis.dev/v1/binance-futures/incremental_book_L2/2025/05/01/BTCUSDT.csv.gz).
+
+
 ## Usage 
 
 This repo is currently configured to be deployed from an Amazon SageMaker codespace, deploying it elsewhere will require configuration changes.
@@ -43,4 +48,22 @@ update, not as a delta to add.
 
 ## Features
 
-(to add)
+<p align="center">
+  <img width="49%" alt="localhost_5173_ (5)" src="https://github.com/user-attachments/assets/1892a143-1fc7-4eb9-8d69-eb2905a732c2" />
+  <img width="49%" alt="localhost_5173_ (6)" src="https://github.com/user-attachments/assets/76050f94-af2f-4457-bf3a-9931b52efd63" />
+</p> Intuitive axis-independent zoom selection, panning, hovering, etc.
+
+&nbsp;
+
+<img width="2882" height="1520" alt="localhost_5173_ (7)" src="https://github.com/user-attachments/assets/836bbffc-01ff-462b-99f1-94b11208c138" />
+Click-based slice selection (right panel), forward-backward playback with ← →.
+
+&nbsp;
+
+<img width="2307" height="1520" alt="localhost_5173_ (8)" src="https://github.com/user-attachments/assets/407240ab-afa6-44de-8915-d98af28faf24" />
+Support/Resistance quantity indicators.
+
+&nbsp;
+
+<img width="2882" height="1520" alt="localhost_5173_ (9)" src="https://github.com/user-attachments/assets/a8c3bdb3-a3fc-401c-8d2a-2f7058d3f087" />
+Participant auditing (via second marketbook upload). (This event depicts several participant ask order fills, and subsequent placing of ask orders at the mid, preventing the price from freely climbing above ~94257.)
