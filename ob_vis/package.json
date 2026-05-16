@@ -1,8 +1,8 @@
 {
   "name": "ob_vis",
   "version": "1.0.0",
-  "description": "blah",
-  "main": "index.js",
+  "description": "Interactive order book depth visualization client for obAudit.",
+  "private": true,
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
@@ -10,12 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "blah"
+    "url": "https://github.com/hazelflaming/obAudit.git"
   },
   "keywords": [
-    "blah"
+    "order-book",
+    "market-depth",
+    "visualization",
+    "uplot",
+    "trading"
   ],
-  "author": "blah",
+  "author": "Hazel Flaming",
   "license": "MIT",
   "devDependencies": {
     "uplot": "^1.6.32",
